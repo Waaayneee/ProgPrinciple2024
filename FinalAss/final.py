@@ -3,7 +3,7 @@ from tkinter import ttk
 from tkinter import messagebox
 from tkinter import simpledialog
 from datetime import datetime
-#adding comment test
+
 # Create the main application window
 menu = Tk()
 menu.title("Fent Store")  # Set the title of the window
@@ -28,7 +28,7 @@ def show_error(title="Error", message="An error has occurred.", severity="error"
     # Adjust the appearance based on severity
     if severity == "error":
         popup.title("Error")
-        bg_color = "red"
+        bg_color = "orange"
     elif severity == "warning":
         popup.title("Warning")
         bg_color = "orange"
