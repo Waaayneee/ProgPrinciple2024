@@ -64,7 +64,7 @@ def add_new_product():
     # Create entry fields for table rows
     addNewProductEntries = []
 
-    # Add entries for all fields except Supplier
+    # Add entries for the all fields except Supplier
     for col in range(len(headers)):
         if col != 3:  # Supplier column will be a dropdown
             addNewProductEntry = Entry(addProductWindow, font=("Arial", 12))
@@ -78,7 +78,7 @@ def add_new_product():
     except FileNotFoundError:
         suppliers = []
 
-    # Check if suppliers exist
+    # Check if the suppliers exist
     if not suppliers:
         addProductWindow.destroy()
         show_error(title="No Suppliers Found", message="No suppliers found. Please add a supplier first.", severity="error")
